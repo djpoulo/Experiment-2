@@ -43,3 +43,5 @@ int main()
 		cout << "\tV = " << V << "\n";
 		}	
 _getch();
+return 0;
+}
