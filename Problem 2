@@ -1,0 +1,34 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	double B, CC, GU;
+	CC = 1.10;
+
+	cout << "How much is your balance in your last bill? \n";
+	cin >> B;
+	cout << "\n";
+	
+	cout << "How many gallons have you used in your consumption? \n";
+	cin >> GU;
+	cout << "\n";
+	
+	if (B <= 0)
+	{
+	cout << "Your next balance next month would be:";
+	cout << 35 + (CC*GU);
+	cout << "\nHave a nice day!";
+	}
+	else 
+	{
+	cout << "Unluckily, you have a remaining balance of " << B << "PHP. \n";
+	cout << "\n";
+	cout << "You need to pay your remaining balance:" << 35 + 20 + B + (CC*GU) << "PHP. \n";
+	cout << "\nHave a nice day!";
+	}
+_getch();
+return 0;
+}
